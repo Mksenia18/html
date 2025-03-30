@@ -1,0 +1,206 @@
+
+
+/* Global styles */
+    body {
+      background-color: #000080; /* Navy blue background */
+      color: #ffffff;
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('/api/placeholder/100/100');
+      background-repeat: repeat;
+    }
+
+    /* Box model example */
+    .page-container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #000060;
+      border: 5px ridge #c0c0c0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #800080; /* Purple */
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 15px;
+      border: 3px outset #ff00ff;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ffff00; /* Yellow */
+      text-shadow: 2px 2px #ff0000;
+      margin: 0;
+    }
+
+    /* Selectors and pseudo-classes */
+    .blink {
+      animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+
+    .menu {
+      background-color: #008080; /* Teal */
+      padding: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 15px;
+      margin: 0 5px;
+      background-color: #800000; /* Maroon */
+      border: 2px outset #ff0000;
+      display: inline-block;
+    }
+
+    .menu a:hover {
+      background-color: #ff0000;
+      border-style: inset;
+    }
+
+    /* Positioning example */
+    .content-area {
+      position: relative;
+      background-color: #000060;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .main-content {
+      margin-right: 180px; /* Space for sidebar */
+    }
+
+    .sidebar {
+      position: absolute;
+      width: 160px;
+      top: 15px;
+      right: 15px;
+      background-color: #800080;
+      padding: 10px;
+      border: 2px ridge #ff00ff;
+    }
+
+    /* Float example */
+    .news-item {
+      background-color: #400040;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ff00ff;
+      overflow: hidden;
+    }
+
+    .news-icon {
+      float: left;
+      width: 80px;
+      height: 80px;
+      background-color: #ff0000;
+      margin-right: 10px;
+      border: 2px inset #ff00ff;
+    }
+
+    /* Pseudo-elements */
+    h2::before {
+      content: "★ ";
+      color: #ffff00;
+    }
+
+    h2::after {
+      content: " ★";
+      color: #ffff00;
+    }
+
+    /* Flexbox example */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #400040;
+      border: 2px groove #ff00ff;
+    }
+
+    .gallery-item {
+      flex: 0 0 30%;
+      height: 100px;
+      margin-bottom: 10px;
+      background-color: #008080;
+      border: 2px solid #00ffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    /* Media query */
+    @media (max-width: 820px) {
+      .page-container {
+        width: 100%;
+      }
+
+      .main-content {
+        margin-right: 0;
+      }
+
+      .sidebar {
+        position: static;
+        width: auto;
+        margin-bottom: 15px;
+      }
+
+      .gallery-item {
+        flex: 0 0 48%;
+      }
+    }
+
+    /* Visitor counter */
+    .counter {
+      text-align: center;
+      margin-top: 15px;
+      padding: 5px;
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      font-family: "Courier New", monospace;
+    }
+
+    /* Under construction */
+    .construction {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ffff00;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+      border-top: 1px solid #c0c0c0;
+      padding-top: 10px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
